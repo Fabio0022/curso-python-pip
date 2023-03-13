@@ -1,4 +1,4 @@
-import matplotlib.pylot as pylot
+import matplotlib.pyplot as plt
 
 def generate_pie_chart():
     labels = ['A','B', 'C']
@@ -7,4 +7,4 @@ def generate_pie_chart():
     fig, ax = plt.subplots()
     ax.pie(values, labels = labels)
     plt.savefig('.pie.png')
-    plt.clone()
+    plt.close()
