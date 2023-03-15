@@ -12,7 +12,7 @@ python3 main.py
 git clone
 cd app
 python -m venv env
-.\env\Scripts\activate
+.\env\Scripts\activate | deactivate .\env\
 pip install -r requirements.txt
 python main.py 
 ``` 
