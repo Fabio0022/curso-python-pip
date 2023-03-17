@@ -12,7 +12,8 @@ def run():
    
    
   df = pd.read_csv('data.csv')
-  df = df[df['Continent'] == 'Africa']
+  continent = input("Ingrese el continente que desea seleccionar: ")
+  df = df[df['Continent'] == continent]
 
   countries = df['Country'].values
   percentages = df['World Population Percentage'].values
